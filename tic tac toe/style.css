@@ -1,0 +1,116 @@
+*{
+    margin : 0%;
+    padding: 0%;
+    
+}
+nav{
+    background-color: rgb(204, 149, 172);
+    color: white;
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 12px;
+
+}
+nav li{
+    list-style-type: none;
+}
+.maincont{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row-reverse;
+background-image: url("backg2.jpg");
+background-size: cover;
+min-height: 90vh;
+
+
+}
+.cont{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    position: relative;
+    margin:23px;
+    
+    
+}
+.line{
+    height: 5px;
+    width: 0;
+    border-radius: 4px;
+    
+    background-color: white;
+    position: absolute;
+    transition: width 1s ease-in-out;
+    
+
+
+}
+
+.box{
+    border : 3px solid rgb(200, 95, 130);
+    font-size: 8vw;
+    color: rgb(144, 104, 104);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.box:hover{
+    background-color:rgb(233, 178, 216);
+}
+.info{
+    font-size: 30px;
+    color: white;
+}
+
+.content{
+    padding: 0 34px;
+    
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+#rest{
+    margin:  0 25px;
+    padding: 15px 25px;
+    background-color: rgb(143, 78, 117);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+}
+@media screen  and (max-width :800px){
+    .maincont{
+        flex-wrap: wrap;
+    }
+    .content{
+        margin-top: 34px;
+    }
+    .content h1{
+        font-size: 1.5rem;
+    }
+    .cont{
+        display: grid;
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+    
+}
